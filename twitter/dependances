@@ -1,0 +1,5 @@
+dépendances :
+
+  pip install python-twitter
+  
+  pip install MySQL-python
