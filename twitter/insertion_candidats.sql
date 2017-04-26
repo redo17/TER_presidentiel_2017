@@ -27,7 +27,7 @@ SET nom_candidat = "Asselineau",
 INSERT candidat
 SET nom_candidat="Cheminade",
     prenom_candidat="Jacques",
-    nom_parti_candidat="",
+    nom_parti_candidat="Solidarité et progrès",
     id_twitter_candidat=150201042;
 
 
@@ -44,7 +44,7 @@ SET nom_candidat="Fillon",
 INSERT candidat
 SET nom_candidat="Hamon",
     prenom_candidat="Benoît",
-    nom_parti_candidat="Parti Socialiste",
+    nom_parti_candidat="Parti socialiste",
     id_twitter_candidat=14389177;
 
 /* Jean Lassale */
@@ -52,7 +52,7 @@ SET nom_candidat="Hamon",
 INSERT candidat
 SET nom_candidat="Lassale",
     prenom_candidat="Jean",
-    nom_parti_candidat="",
+    nom_parti_candidat="Résistons !",
     id_twitter_candidat=102722347;
 
 /* Marine Le Pen */
@@ -60,7 +60,7 @@ SET nom_candidat="Lassale",
 INSERT candidat
 SET nom_candidat="Le Pen",
     prenom_candidat="Marine",
-    nom_parti_candidat="Front National",
+    nom_parti_candidat="Front national",
     id_twitter_candidat=217749896;
 
 /* Emmanuel Macron */
@@ -68,7 +68,7 @@ SET nom_candidat="Le Pen",
 INSERT candidat
 SET nom_candidat="Macron",
     prenom_candidat="Emmanuel",
-    nom_parti_candidat="En Marche",
+    nom_parti_candidat="En marche !",
     id_twitter_candidat=1976143068;
 
 /* Jean Luc Mélenchon */
@@ -76,7 +76,7 @@ SET nom_candidat="Macron",
 INSERT candidat
 SET nom_candidat="Mélenchon",
     prenom_candidat="Jean-Luc",
-    nom_parti_candidat="la France Insoumise",
+    nom_parti_candidat="La France insoumise",
     id_twitter_candidat=80820758;
 
 /* Philippe Poutou */
@@ -84,5 +84,5 @@ SET nom_candidat="Mélenchon",
 INSERT candidat
 SET nom_candidat="Poutou",
     prenom_candidat="Philippe",
-    nom_parti_candidat="Nouveau Parti Anticapitaliste",
+    nom_parti_candidat="Nouveau parti anticapitaliste",
     id_twitter_candidat=374392774;
