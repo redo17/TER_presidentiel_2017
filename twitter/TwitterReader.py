@@ -37,7 +37,7 @@ err = ""
 
 def getTweets(user_id, last_id):
     last_tweet = api.GetUserTimeline(user_id, count=1)
-    list_tweets=[last_tweet[-1]]
+    list_tweets = [last_tweet[-1]]
     listIds = [last_tweet[-1].id]
     end = False
 
@@ -69,7 +69,7 @@ def post(tweet, connection):
 
     tw_json = json.dumps(unicode(tweet.AsJsonString()).replace('"', '\\\"').encode("utf-8"))
 
-    user =tweet.user.id
+    user = tweet.user.id
     request = connection.cursor()
     select = select_name % user
     request.execute(select)
