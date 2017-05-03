@@ -27,13 +27,15 @@
         @include('menu')
 
         <!-- CONTENU -->
-        @yield('contenu')
+        <div class="container">
+            @yield('contenu')
 
-        <!-- PIED DE PAGE -->
-        @include('footer')
+            <!-- PIED DE PAGE -->
+            @include('footer')
 
-        <!-- SCRIPTS -->
-        @include('scripts')
+            <!-- SCRIPTS -->
+            @include('scripts')
+        </div>
 
     </body>
 </html>
