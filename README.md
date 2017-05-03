@@ -15,7 +15,7 @@ Les feuilles de style CSS (Bootstrap et autres) sont dans le dossier `public/css
 * Ajout des prochaines vues du site et leur traitement PHP préparé (page/candidat...)  
 * Finalisation des scripts d'insertion en base après traitement de la brique logicielle
 ## Où en est le projet ?   
-Nous sommes le 4 Mai au moment de cette modification. Selon le diagramme de Gantt, les tâches suivantes doivent être terminées :   
+Nous sommes le 3 Mai au moment de cette modification. Selon le diagramme de Gantt, les tâches suivantes doivent être terminées :   
 * Mise en place de la base de données
 * Extraction des données avec l'API Twitter    
 
@@ -27,7 +27,8 @@ Les tâches suivantes sont en cours et doivent être réalisées **avant le 15 m
 Récemment, le prof a répondu à notre mail du 26 avril.      
 Une réunion est prévu vendredi pour mettre au clair tout ça.
 
-Du côté du site web objectif, beaucoup de travail reste à faire côté visuel du point de vue de la présentation des données pour l'utilisateur.       
+Du côté du site web objectif, beaucoup de travail reste à faire côté visuel du point de vue de la présentation des données pour l'utilisateur.        
+
 La page d'accueil est disponible ci-dessous.
 
 ## Page d'accueil actuelle   
