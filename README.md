@@ -8,11 +8,13 @@ Pour le moment, 5 vues sont présentes :
 * `resources/views/scripts.blade.php` : la vue contenant les inclusions de scripts (incluse dans _master.blade.php_).    
 * `resources/views/footer.blade.php` : la vue contenant le pied de page du site web (incluse dans _master.blade.php_).
 * `resources/views/index.blade.php` : la vue contenant la page d'accueil du site web (basé sur _master.blade.php_).     
+* `resources/views/candidat.blade.php` : la vue correspondant à un candidat sélectionné (basé sur _master.blade.php_).
     
-Les feuilles de style CSS (Bootstrap et autres) sont dans le dossier `public/css` et la route permettant d'accéder à la page d'accueil est dans le dossier `routes/web.php`.    
+Les feuilles de style CSS (Bootstrap et autres) sont dans le dossier `public/css` et la route permettant d'accéder à la page d'accueil est dans le dossier `routes/web.php`.     
      
 ## Prochainement     
-* Ajout des prochaines vues du site et leur traitement PHP préparé (page/candidat...)  
+* Ajout de la vue de résultat de recherche d'un mot    
+* Ajout des indicateurs (nuage de mots...) sur la vue du candidat    
 * Finalisation des scripts d'insertion en base après traitement de la brique logicielle
 ## Où en est le projet ?   
 Nous sommes le 3 Mai au moment de cette modification. Selon le diagramme de Gantt, les tâches suivantes doivent être terminées :   
