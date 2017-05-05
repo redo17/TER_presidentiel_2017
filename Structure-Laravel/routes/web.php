@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'CandidatController@index');
 
-    return view('index');
+Route::get('candidat', function() {
+
+	return "HELLO";
 });
+
+Route::get('candidat/{nom}', ['as' => 'candidat', 'uses' => 'CandidatController@show'])->where('nom', '[A-Za-z]+');
