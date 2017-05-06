@@ -17,7 +17,7 @@
 		{!! Form::open(['url' => 'recherche', 'class' => 'form-horizontal']) !!}
 			<div class="form-group">
 			  	<div class="col-lg-12">
-			  		{!! Form::text('recherche', null, ['class' => 'form-control', 'placeholder' => 'Rechercher un mot', 'id' => 'recherche']) !!}
+			  		{!! Form::text('recherche', Input::old('recherche'), ['class' => 'form-control', 'placeholder' => 'Rechercher un mot', 'id' => 'recherche']) !!}
 			  	</div>
 			</div>
 			{!! Form::submit('Rechercher', ['class' => 'btn btn-primary']) !!}
