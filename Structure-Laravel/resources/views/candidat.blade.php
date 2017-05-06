@@ -1,5 +1,6 @@
 @extends('master')
 
+<!-- Titre de l'onglet -->
 @section('titre')
     Candidat {{ $candidat->nom_candidat }}
 @endsection

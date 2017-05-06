@@ -14,10 +14,8 @@
 // Route pour la page d'accueil
 Route::get('/', 'CandidatController@index')->name('accueil');
 
-// Route pour candidat (ne marche pas)
+// Route pour un candidat
 Route::get('candidat/{nom}', ['as' => 'candidat', 'uses' => 'CandidatController@show'])->where('nom', '[A-Za-z- é]+');
-
-// Route pour le résultat d'une recherche
 
 
 // Route pour les infos de création du site
