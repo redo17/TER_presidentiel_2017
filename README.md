@@ -1,4 +1,11 @@
 # TER Presidentielles 2017
+     
+## Commandes utiles pour Laravel    
+J'ai rencontré quelques problèmes lors de certains réglages de paramètres ou d'installation de paquets pour Laravel. En fait il ne faut pas oublier d'exéuter les commandes suivantes pour faire un peu de ménage :    
+* `sudo php artisan optimize`    
+* `sudo php artisan config:cache`    
+* `sudo php artisan route:cache`    
+    
     
 ## Structure Laravel   
 La structure Laravel est la hiérarchie de dossier du framework Laravel qui constituera le site web côté client.     
