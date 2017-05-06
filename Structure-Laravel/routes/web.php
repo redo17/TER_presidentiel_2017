@@ -19,3 +19,9 @@ Route::get('candidat/{nom}', ['as' => 'candidat', 'uses' => 'CandidatController@
 
 // Route pour le résultat d'une recherche
 
+// Route pour les infos de création du site
+Route::get('infos', function() {
+
+	return View::make('infos');
+
+})->name('infos');

@@ -16,22 +16,22 @@
 		    <li class="dropdown">
 		      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Candidats <span class="caret"></span></a>
 		      <ul class="dropdown-menu" role="menu">
-		        <li><a href="#">ARTHAUD Nathalie</a></li>
-		        <li><a href="#">ASSELINEAU François</a></li>
-		        <li><a href="#">CHEMINADE Jacques</a></li>
-		        <li><a href="#">DUPONT-AIGNAN Nicolas</a></li>
-		        <li><a href="#">FILLION François</a></li>
-		        <li><a href="#">HAMON Benoît</a></li>
-		        <li><a href="#">LASSALLE Jean</a></li>
-		        <li><a href="#">LE PEN Marine</a></li>
-		        <li><a href="#">MACRON Emmanuel</a></li>
-		        <li><a href="#">MELENCHON Jean-Luc</a></li>
-		        <li><a href="#">POUTOU Philippe</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Arthaud']) }}">ARTHAUD Nathalie</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Asselineau']) }}">ASSELINEAU François</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Cheminade']) }}">CHEMINADE Jacques</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Dupont-Aignan']) }}">DUPONT-AIGNAN Nicolas</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Fillion']) }}">FILLION François</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Hamon']) }}">HAMON Benoît</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Lassalle']) }}">LASSALLE Jean</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Le Pen']) }}">LE PEN Marine</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Macron']) }}">MACRON Emmanuel</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Mélenchon']) }}">MELENCHON Jean-Luc</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Poutou']) }}">POUTOU Philippe</a></li>
 		      </ul>
 		    </li>
 		  </ul>
 		  <ul class="nav navbar-nav navbar-right">
-		    <li><a href="#" target="_blank">À Propos / Contact</a></li>
+		    <li><a href="{{ route('infos') }}">Infos</a></li>
 		  </ul>
 		</div>
 	</div>
