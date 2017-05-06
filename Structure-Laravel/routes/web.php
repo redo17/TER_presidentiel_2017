@@ -11,11 +11,8 @@
 |
 */
 
+// Route pour la page d'accueil
 Route::get('/', 'CandidatController@index');
 
-Route::get('candidat', function() {
-
-	return "HELLO";
-});
-
+// Route pour candidat (ne marche pas)
 Route::get('candidat/{nom}', ['as' => 'candidat', 'uses' => 'CandidatController@show'])->where('nom', '[A-Za-z]+');
