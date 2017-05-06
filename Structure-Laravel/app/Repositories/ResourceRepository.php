@@ -28,6 +28,6 @@ abstract class ResourceRepository
      */
 	public function getByName($nom)
 	{
-		return $this->model::where('nom_candidat', $nom);
+		return $this->model::where('nom_candidat', $nom)->get()->first();
 	}
 }

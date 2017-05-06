@@ -1,5 +1,9 @@
 @extends('master')
 
+@section('titre')
+    Accueil
+@endsection
+
 @section('contenu')
 
 <!-- En-tête titre + texte) -->
@@ -43,4 +47,4 @@
     </div>
     @endforeach
 </div>
-@stop
+@endsection
