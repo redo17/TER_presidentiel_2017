@@ -44,7 +44,8 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if($exception instanceof \ModelNotFoundException) {
+        if($exception instanceof \ModelNotFoundException || 
+           $exception instanceof \Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException) {
 
             return response()->view('errors.404', [], 404);
         }

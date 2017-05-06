@@ -17,6 +17,8 @@ Route::get('/', 'CandidatController@index')->name('accueil');
 // Route pour un candidat
 Route::get('candidat/{nom}', ['as' => 'candidat', 'uses' => 'CandidatController@show'])->where('nom', '[A-Za-z- é]+');
 
+// Route pour le résultat de la recherche
+Route::post('recherche', 'RechercheController@recherche');
 
 // Route pour les infos de création du site
 Route::get('infos', function() {

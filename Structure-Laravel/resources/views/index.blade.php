@@ -23,6 +23,7 @@
 			<div class="form-group">
 			  	<div class="col-lg-12">
 			  		{!! Form::text('recherche', Input::old('recherche'), ['class' => 'form-control', 'placeholder' => 'Rechercher un mot', 'id' => 'recherche']) !!}
+			  		{!! $errors->first('recherche', '<div id="erreur-recherche" class="well well-sm">Erreur : :message</div>') !!}
 			  	</div>
 			</div>
 			{!! Form::submit('Rechercher', ['class' => 'btn btn-primary']) !!}
