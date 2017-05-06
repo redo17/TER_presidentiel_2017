@@ -14,14 +14,14 @@
 	    <h3>Recherche lexicale</h3>
 	</div>
 	<div class="col-lg-12">
-		<form class="form-horizontal">
+		{!! Form::open(['url' => 'recherche', 'class' => 'form-horizontal']) !!}
 			<div class="form-group">
 			  	<div class="col-lg-12">
-			    	<input type="text" class="form-control" id="inputSearch" placeholder="Rechercher un mot">
+			  		{!! Form::text('recherche', '', array('class'=>'form-control', 'placeholder'=>'Rechercher un mot', 'id' => 'recherche')) !!}
 			  	</div>
 			</div>
-			<button type="submit" class="btn btn-primary">Rechercher</button>
-		</form>
+			{!! Form::submit('Rechercher', ['class' => 'btn btn-primary']) !!}
+		{!! Form::close() !!}
 	</div>
 </div>
 

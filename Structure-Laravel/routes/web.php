@@ -16,3 +16,6 @@ Route::get('/', 'CandidatController@index');
 
 // Route pour candidat (ne marche pas)
 Route::get('candidat/{nom}', ['as' => 'candidat', 'uses' => 'CandidatController@show'])->where('nom', '[A-Za-z]+');
+
+// Route pour le résultat d'une recherche
+
