@@ -9,7 +9,7 @@ J'ai rencontré quelques problèmes lors de certains réglages de paramètres ou
     
 ## Structure Laravel   
 La structure Laravel est la hiérarchie de dossier du framework Laravel qui constituera le site web côté client.     
-Pour le moment, 6 vues sont présentes :  
+Pour le moment, 6 vues sont présentes (sans compter le dossier "errors") :  
 * `resources/views/master.blade.php` : la vue contenant le template de base pour la création des pages du site.   
 * `resources/views/menu.blade.php` : la vue contenant le menu du site web (incluse dans _master.blade.php_).    
 * `resources/views/scripts.blade.php` : la vue contenant les inclusions de scripts (incluse dans _master.blade.php_).    
