@@ -17,7 +17,7 @@
 		<form class="form-horizontal">
 			<div class="form-group">
 			  	<div class="col-lg-12">
-			    	<input type="text" class="form-control" id="inputSearch" placeholder="Rechercher un mot, une expression...">
+			    	<input type="text" class="form-control" id="inputSearch" placeholder="Rechercher un mot">
 			  	</div>
 			</div>
 			<button type="submit" class="btn btn-primary">Rechercher</button>
