@@ -9,13 +9,14 @@ J'ai rencontré quelques problèmes lors de certains réglages de paramètres ou
     
 ## Structure Laravel   
 La structure Laravel est la hiérarchie de dossier du framework Laravel qui constituera le site web côté client.     
-Pour le moment, 6 vues sont présentes (sans compter le dossier "errors") :  
+Pour le moment, 7 vues sont présentes (sans compter le dossier "errors") :  
 * `resources/views/master.blade.php` : la vue contenant le template de base pour la création des pages du site.   
 * `resources/views/menu.blade.php` : la vue contenant le menu du site web (incluse dans _master.blade.php_).    
 * `resources/views/scripts.blade.php` : la vue contenant les inclusions de scripts (incluse dans _master.blade.php_).    
 * `resources/views/footer.blade.php` : la vue contenant le pied de page du site web (incluse dans _master.blade.php_).
 * `resources/views/index.blade.php` : la vue contenant la page d'accueil du site web (basé sur _master.blade.php_).     
-* `resources/views/candidat.blade.php` : la vue correspondant à un candidat sélectionné (basé sur _master.blade.php_).
+* `resources/views/candidat.blade.php` : la vue correspondant à un candidat sélectionné (basé sur _master.blade.php_).    
+* `resources/views/resultat-recherche.blade.php` : la vue correspondant au résultat de la recherche lexicale.    
     
 Les feuilles de style CSS (Bootstrap et autres) sont dans le dossier `public/css` et la route permettant d'accéder à la page d'accueil est dans le dossier `routes/web.php`.     
      
