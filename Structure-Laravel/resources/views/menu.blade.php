@@ -20,7 +20,7 @@
 		        <li><a href="{{ route('candidat', ['nom' => 'Asselineau']) }}">ASSELINEAU François</a></li>
 		        <li><a href="{{ route('candidat', ['nom' => 'Cheminade']) }}">CHEMINADE Jacques</a></li>
 		        <li><a href="{{ route('candidat', ['nom' => 'Dupont-Aignan']) }}">DUPONT-AIGNAN Nicolas</a></li>
-		        <li><a href="{{ route('candidat', ['nom' => 'Fillion']) }}">FILLION François</a></li>
+		        <li><a href="{{ route('candidat', ['nom' => 'Fillon']) }}">FILLON François</a></li>
 		        <li><a href="{{ route('candidat', ['nom' => 'Hamon']) }}">HAMON Benoît</a></li>
 		        <li><a href="{{ route('candidat', ['nom' => 'Lassalle']) }}">LASSALLE Jean</a></li>
 		        <li><a href="{{ route('candidat', ['nom' => 'Le Pen']) }}">LE PEN Marine</a></li>

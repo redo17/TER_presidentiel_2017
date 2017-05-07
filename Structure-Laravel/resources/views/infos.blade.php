@@ -8,7 +8,7 @@
 @section('contenu')
 
 <header>
-	<h2>Projet TER : Élections 2017</h2>
+	<h3>Projet TER : Élections 2017</h3>
 	<p class="lead">Participants :</p>
 	<ul>
 		<li>BOUDOIRE Damien</li>
