@@ -42,12 +42,16 @@ Du côté du site web objectif, beaucoup de travail reste à faire côté visuel
 La page d'accueil est disponible ci-dessous.
 
 ## Quelques pages du site      
+### Page d'accueil    
+
 La page d'accueil est accessible, après installation de Laravel sur un serveur, à l'adresse :     
 `http://localhost/NOM_PROJET_LARAVEL/public`
      
 ![Capture de la page d'accueil](http://img15.hostingpics.net/pics/206267AccueilTER.png)     
 
     
+### Page des résultats d'une recherche    
+
 Un exemple de ce que donner le résultat d'un mot recherché :     
      
 ![Capture de la page résultat de recherche](https://img4.hostingpics.net/pics/867049resultatrecherche.png)
