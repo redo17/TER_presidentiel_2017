@@ -2,21 +2,22 @@
 
 <!-- Titre de l'onglet -->
 @section('titre')
-    Accueil
+    Presid-Analsyse | Accueil
 @endsection
 
 @section('contenu')
 
 <!-- En-tête titre + texte) -->
 <header>
-	<h1>Lorem Ipsum</h1>
-	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet orci diam, eget tristique arcu commodo eu. Nunc pulvinar dui sed massa pretium lobortis. Vestibulum ac vestibulum urna, ac faucibus nisl. Pellentesque vehicula justo sit amet ullamcorper bibendum. Cras et pharetra lacus, at venenatis massa. Aliquam sed imperdiet velit, id pellentesque quam.</p>
+	<h2>L'analyse des campagnes présidentielles</h2>
+	<p class="lead">Durant les campagnes présidentielles, un grand flux de données circule sur les réseaux sociaux officiels des candidats (tweets, messages, références, infos...). Présid-Analyse regroupe toutes ces données lexicographiques afin de les analyser et d'effectuer des traitements pertinents en fonction de chaque candidat. Ainsi vous pourrez, sur ce site, visualiser la distance qui sépare un candidat d'un autre ou connaître le mot qu'il a le plus employé ou encore même rechercher un mot et savoir quel est le candidat qui l'a le plus utilisé. Tout cela en se basant sur les données diffusées pendant les campagnes présidentielles.</p>
 </header>
  
 <!-- Zone de recherche -->
 <div class="row">
 	<div class="col-lg-12">
 	    <h3>Recherche lexicale</h3>
+	    <p class="lead">Quel est le candidat qui a le plus utilisé ce mot ?</p>
 	</div>
 	<div class="col-lg-12">
 		{!! Form::open(['url' => 'recherche', 'class' => 'form-horizontal']) !!}
@@ -38,6 +39,7 @@
 
 	<div class="col-lg-12">
 	    <h3>Sélection d'un candidat</h3>
+	    <p class="lead">Sélectionnez un candidat pour connaître toutes les analyses qui lui sont associées.</p>
 	</div>
 
     @foreach($listeCandidats as $candidat)

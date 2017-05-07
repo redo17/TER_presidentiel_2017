@@ -2,7 +2,7 @@
 
 <!-- Titre de l'onglet -->
 @section('titre')
-    Candidat {{ $candidat->nom_candidat }}
+    Presid-Analsyse | Candidat {{ $candidat->nom_candidat }}
 @endsection
 
 @section('contenu')
