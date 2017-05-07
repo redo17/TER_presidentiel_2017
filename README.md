@@ -21,7 +21,7 @@ Pour le moment, 7 vues sont présentes (sans compter le dossier "errors") :
 Les feuilles de style CSS (Bootstrap et autres) sont dans le dossier `public/css` et la route permettant d'accéder à la page d'accueil est dans le dossier `routes/web.php`.     
      
 ## Prochainement     
-* Ajout de la vue de résultat de recherche d'un mot (vue terminé (TODO : traitement des données))     
+* Ajout de la vue de résultat de recherche d'un mot (vue terminée (TODO : traitement des données))     
 * Ajout des indicateurs (nuage de mots...) sur la vue du candidat    
 * Finalisation des scripts d'insertion en base après traitement de la brique logicielle
 ## Où en est le projet ?   
