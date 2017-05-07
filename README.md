@@ -52,6 +52,6 @@ La page d'accueil est accessible, après installation de Laravel sur un serveur,
     
 ### Page des résultats d'une recherche    
 
-Un exemple de ce que donner le résultat d'un mot recherché :     
+Un exemple de ce que peut donner le résultat d'un mot recherché :     
      
 ![Capture de la page résultat de recherche](https://img4.hostingpics.net/pics/867049resultatrecherche.png)
