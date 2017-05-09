@@ -36,6 +36,7 @@ CREATE TABLE mot(
 CREATE TABLE contenir(
         id_tweet            BigInt NOT NULL ,
         valeur_mot          Varchar (50) NOT NULL ,
+        occurences_contenir Int,
         PRIMARY KEY (id_tweet ,valeur_mot ),
         FOREIGN KEY (id_tweet)
             REFERENCES tweet(id_tweet),
