@@ -1,9 +1,12 @@
 Le script fonctionne à condition d'avoir une base de données mysql appelé "Ter" et un utilisateur "app" avec le mot de passe "18052017".
 
+Appel création et initialisation de la base de données :
+  sudo mysql -p < init.sql
+
 Appel des créations des tables :
   mysql Ter -u app -p < creation_tables.sql
 Appel de l'inserton des candidats :
   mysql Ter -u app -p < insertion_candidats.sql
-  
+
 Pour supprimer tous les tweets archivé, on pourra utiliser :
   mysql Ter -u app -p < del.sql

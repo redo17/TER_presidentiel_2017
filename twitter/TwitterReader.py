@@ -1,5 +1,6 @@
-#!/usr/bin/python
-import datetime, time, sys, twitter, json, time
+# coding: utf8
+
+import datetime, time, sys, twitter, json
 import MySQLdb as mysql
 from dateutil import parser
 
@@ -14,24 +15,20 @@ app_user = "app"
 password = "18052017"
 db = "Ter"
 
-select_candidats_ids = "SELECT id_twitter_candidat\n\
+select_candidats_ids = u"SELECT id_twitter_candidat\n\
                         FROM candidat;"
 
-select_last_tweet_from =   "SELECT max(id_tweet)\n\
+select_last_tweet_from =   u"SELECT max(id_tweet)\n\
                             FROM tweet t, candidat c\n\
                             WHERE t.nom_candidat = c.nom_candidat\n\
                             AND c.id_twitter_candidat = %s;"
 
-select_name =  "SELECT nom_candidat\n\
+select_name =  u"SELECT nom_candidat\n\
                 FROM candidat\n\
                 WHERE id_twitter_candidat = %s;"
 
-insert_tweet = "INSERT INTO tweet SET \n\
-                    id_tweet=%d,\n\
-                    texte_tweet=%s,\n\
-                    json_tweet=%s,\n\
-                    date_creation_tweet=\"%s\",\n\
-                    nom_candidat=\"%s\";"
+insert_tweet = u"INSERT IGNORE INTO tweet VALUE \n\
+                    (%s, %s, %s, %s, %s);"
 
 err = ""
 
@@ -59,37 +56,38 @@ def getTweets(user_id, last_id):
     return list_tweets
 
 def post(tweet, connection):
-    identificator = tweet.id
+    identificator = unicode(tweet.id)
 
     tw_sec = tweet.created_at_in_seconds
     tw_date = time.gmtime(tw_sec)
-    create_at = time.strftime("%Y-%m-%d", tw_date)
+    create_at = unicode(time.strftime('%Y-%m-%d', tw_date))
 
-    text = json.dumps(unicode(tweet.text).encode("utf-8"))
+    text = unicode(tweet.text)
 
-    tw_json = json.dumps(unicode(tweet.AsJsonString()).replace('"', '\\\"').encode("utf-8"))
+    retweet = u'%s' % tweet.retweet_count
 
     user = tweet.user.id
     request = connection.cursor()
     select = select_name % user
     request.execute(select)
-    name = request.fetchone()[0]
+    name = unicode(request.fetchone()[0])
 
     try:
-        insert = insert_tweet % (identificator, text, tw_json, create_at, name)
+        params = (identificator, text, create_at, retweet, name)
+
+        with connection:
+            current = connection.cursor()
+            err = tweet
+            current.execute(insert_tweet, params)
+
     except:
         errors = sys.exc_info()
         for e in errors:
-            print "%s" % e
-
-    with connection:
-        current = connection.cursor()
-        err = tweet
-        current.execute(insert)
+            print("%s" % e)
 
 
 try:
-    connection = mysql.connect("localhost", app_user, password, db)
+    connection = mysql.connect("localhost", app_user, password, db, charset="utf8mb4")
     connection.query
     request = connection.cursor()
 
@@ -107,14 +105,13 @@ try:
             if(len(tweets) > 1) :
                 post(tweet, connection)
             else :
-                post(tweet[0], connection)
-
+                post(tweets[0], connection)
 except:
     errors = sys.exc_info()
     for e in errors:
-        print "%s" % e
+        print("%s" % e)
 
-    print tweet
+    print(tweet)
     sys.exit(1)
 finally:
     if connection:
