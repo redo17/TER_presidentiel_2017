@@ -10,7 +10,7 @@
 <!-- En-tête titre + texte) -->
 <header>
 	<h2>L'analyse des campagnes présidentielles</h2>
-	<p class="lead">Durant les campagnes présidentielles, un grand flux de données circule sur les réseaux sociaux officiels des candidats (tweets, messages, références, infos...). Présid-Analyse regroupe toutes ces données lexicographiques afin de les analyser et d'effectuer des traitements pertinents en fonction de chaque candidat. Ainsi vous pourrez, sur ce site, visualiser la distance qui sépare un candidat d'un autre ou connaître le mot qu'il a le plus employé ou encore même rechercher un mot et savoir quel est le candidat qui l'a le plus utilisé. Tout cela en se basant sur les données diffusées pendant les campagnes présidentielles.</p>
+	<p class="lead justifier">Durant les campagnes présidentielles, un grand flux de données circule sur les réseaux sociaux officiels des candidats (tweets, messages, références, infos...). Présid-Analyse regroupe toutes ces données lexicales afin de les analyser et d'effectuer des traitements pertinents en fonction de chaque candidat. Ainsi vous pourrez, sur ce site, visualiser la distance qui sépare un candidat d'un autre ou connaître le mot qu'il a le plus employé ou encore même rechercher un mot et savoir quel est le candidat qui l'a le plus utilisé. Tout cela en se basant sur une lexicographie des données diffusées pendant les campagnes présidentielles.</p>
 </header>
  
 <!-- Zone de recherche -->

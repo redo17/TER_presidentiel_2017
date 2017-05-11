@@ -10,12 +10,12 @@ use App\Repositories\CandidatRepository;
  * Contrôleur pour la table candidat.
  * Généré automatiquement avec la comande "sudo php artisan make:controller CandidatController --resource".
  */ 
-class CandidatController extends Controller
-{
+class CandidatController extends Controller {
+    
     protected $candidatRepository;
 
-    public function __construct(CandidatRepository $candidatRepository)
-    {
+    public function __construct(CandidatRepository $candidatRepository) {
+
         $this->candidatRepository = $candidatRepository;
     }
 
@@ -24,8 +24,8 @@ class CandidatController extends Controller
      *
      * @return \Illuminate\Http\Response La vue avec les candidats.
      */
-    public function index()
-    {
+    public function index() {
+
         $listeCandidats = $this->candidatRepository->getAll();
 
         return view('index', compact('listeCandidats'));

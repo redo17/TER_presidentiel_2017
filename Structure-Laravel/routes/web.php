@@ -23,6 +23,6 @@ Route::post('recherche', 'RechercheController@recherche');
 // Route pour les infos de création du site
 Route::get('infos', function() {
 
-	return View::make('infos');
+	return view('infos');
 
 })->name('infos');
