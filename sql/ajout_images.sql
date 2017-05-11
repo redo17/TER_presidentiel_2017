@@ -1,8 +1,3 @@
-# Exécuter d'abord celle-ci :
-ALTER TABLE candidat
-ADD image_candidat varchar(255);
-
-# Puis ensuite celles-là :
 UPDATE `candidat` SET `image_candidat`="https://pbs.twimg.com/profile_images/692079601200295941/rCfOm6nc_400x400.jpg" WHERE `id_twitter_candidat`=1003575248;
 UPDATE `candidat` SET `image_candidat`="https://pbs.twimg.com/profile_images/845387075486728193/6HA8xTgS.jpg" WHERE `id_twitter_candidat`=200659061;
 UPDATE `candidat` SET `image_candidat`="https://pbs.twimg.com/profile_images/2511020171/orf7onnkacicyn8odg26.jpeg" WHERE `id_twitter_candidat`=150201042;

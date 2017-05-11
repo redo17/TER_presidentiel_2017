@@ -50,7 +50,7 @@ SET nom_candidat="Hamon",
 /* Jean Lassale */
 
 INSERT candidat
-SET nom_candidat="Lassale",
+SET nom_candidat="Lassalle",
     prenom_candidat="Jean",
     nom_parti_candidat="Résistons !",
     id_twitter_candidat=102722347;
