@@ -12,6 +12,7 @@ CREATE TABLE candidat(
         prenom_candidat     Varchar (255) ,
         nom_parti_candidat  Varchar (255) ,
         id_twitter_candidat Int ,
+        image_candidat Varchar(255) ,
         PRIMARY KEY (nom_candidat )
 )ENGINE=InnoDB;
 
