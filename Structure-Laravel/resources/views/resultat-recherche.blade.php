@@ -2,7 +2,7 @@
 
 <!-- Titre de l'onglet -->
 @section('titre')
-    Presid-Analsyse | Recherche
+    Presid-Analyse | Recherche
 @endsection
 
 @section('contenu')
