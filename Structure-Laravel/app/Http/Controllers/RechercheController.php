@@ -77,17 +77,17 @@ class RechercheController extends Controller
     	// Association des prénoms aux noms des candidats renvoyés par la recherche.
     	foreach ($occurencesMot as $resultat) {
 
-    		$candidat = $candidatRepository->getByName($resultat['attributes']['nom_candidat']);
+    		$prenomCandidat = $candidatRepository->getPrenom($resultat['attributes']['nom_candidat']);
 
     		$resultatsRecherche['resultats'][$i] = array(
 
     			'nom_candidat' 	    	 => $resultat['attributes']['nom_candidat'],
-    			'prenom_candidat'  		 => $candidat['prenom_candidat'],
+    			'prenom_candidat'  		 => $prenomCandidat,
     			'nombre_occurences' 	 => $resultat['attributes']['compte_resultat'],
     			'pourcentage_occurences' => ($resultat['attributes']['compte_resultat'] * 100) / $occurencesMot[0]['attributes']['compte_resultat']
     		);
 
-    		$candidatsRanges[] = $candidat['nom_candidat'];
+    		$candidatsRanges[] = $resultat['attributes']['nom_candidat'];
 
     		$i++;
     	}

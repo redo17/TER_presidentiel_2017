@@ -30,17 +30,4 @@ class CandidatController extends Controller {
 
         return view('index', compact('listeCandidats'));
     }   
-
-    /**
-     * Récupère un candidat selon son identifiant.
-     *
-     * @param  String  $nom  Le nom du candidat. 
-     * @return \Illuminate\Http\Response La vue avec le candidat sélectionné.
-     */
-    public function show($nom)
-    {
-        $candidat = $this->candidatRepository->getByName($nom);
-
-        return view('candidat',  compact('candidat'));
-    }
 }

@@ -45,7 +45,7 @@
     @foreach($listeCandidats as $candidat)
     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
         <a class="thumbnail" href="{{ route('candidat', ['nom' => $candidat->nom_candidat]) }}">
-            <img class="img-responsive" src="{{ $candidat->image_candidat }}" alt="Image {{ $candidat->nom_candidat }}">
+            <img class="img-responsive" src="{{ asset($candidat->image_candidat) }}" alt="Image {{ $candidat->nom_candidat }}">
         </a>
         <legend>{{ $candidat->prenom_candidat }} {{ $candidat->nom_candidat }}</legend>
     </div>

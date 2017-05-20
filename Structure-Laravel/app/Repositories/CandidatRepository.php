@@ -15,10 +15,21 @@ class CandidatRepository extends ResourceRepository
      * Récupère un candidat à partir de son nom.
      *
      * @param  String  $nom  Le nom du candidat.
-     * @return \Illuminate\Database\Eloquent/Model L'élément correpsondant à l'identifiant. Si echec, une exception "ModelNotFoundException".
+     * @return \Illuminate\Database\Eloquent/Model Le profil complet du candidat.
      */
-	public function getByName($nom)
-	{
+	public function getCandidat($nom) {
+
 		return $this->model::where('nom_candidat', $nom)->get()->first();
 	}
+
+    /**
+     * Récupère le prénom d'un candidat à partir de son nom.
+     *
+     * @param  String  $nom  Le nom du candidat.
+     * @return \Illuminate\Database\Eloquent/Model Le prénom du candidat.
+     */
+    public function getPrenom($nom) {
+
+        return $this->model::select('prenom_candidat')->where('nom_candidat', $nom)->get()->first();
+    }
 }
